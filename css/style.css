@@ -952,7 +952,7 @@ footer img {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 573px) {
   .btn {
     width: 130px;
     font-size: 13px;
@@ -984,6 +984,9 @@ footer img {
     padding: 0 25px;
   }
 
+  .content_block_three br {
+    display: none;
+  }
   .content_block_three p {
     font-size: 20px;
   }
