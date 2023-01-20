@@ -43,6 +43,16 @@ a {
   color: orange;
 }
 
+/*  scroll  */
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #303030;
+}
+
 /* main */
 
 .main_block_one {
