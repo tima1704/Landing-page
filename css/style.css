@@ -546,7 +546,6 @@ footer img {
 
 @media (max-width: 1090px) {
   .main_block_four {
-    margin: 50px 0;
     padding: 0 25px;
   }
   .main_block_four div a {
@@ -991,9 +990,6 @@ footer img {
 }
 
 @media (max-width: 480px) {
-  .main_block_four {
-    margin-bottom: 60px;
-  }
   .content_contacts_block {
     width: 100%;
     padding: 0 25px;
@@ -1065,7 +1061,7 @@ footer img {
     margin: 10px 0;
   }
   .main_block_four {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 0px;
     width: 100%;
   }
