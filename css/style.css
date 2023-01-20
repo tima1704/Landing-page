@@ -296,8 +296,9 @@ a {
 
 /* info company */
 
-.inforamtion_block {
-  margin: 130px 0;
+.information_block {
+  margin-top: 0px;
+  margin-bottom: 100px;
 }
 
 .content__information {
@@ -495,10 +496,6 @@ footer img {
     margin: 8px 0;
   }
 
-  .inforamtion_block {
-    margin: 130px 0;
-  }
-
   .content__information div {
     width: 500px;
     margin-left: 25px;
@@ -602,8 +599,8 @@ footer img {
     margin: 5px 0;
   }
 
-  .inforamtion_block {
-    margin: 90px 0;
+  .information_block {
+    margin-bottom: 50px;
   }
 
   .content__information div {
@@ -693,7 +690,7 @@ footer img {
   }
 
   .main_block_four {
-    margin-bottom: 120px;
+    margin-bottom: 0px;
     width: 100%;
   }
 
@@ -754,25 +751,17 @@ footer img {
     background-color: orange;
     color: #fefefe;
   }
-}
-@media (max-width: 880px) {
-  .right_card_block div,
-  .left_card_block div {
-    width: 100%;
+
+  .information_block {
+    margin-bottom: 50px;
+    margin-top: 20px;
   }
-  .right_card_block img,
-  .left_card_block img {
-    width: 100%;
-  }
-  .inforamtion_block {
-    margin: 90px 0;
-  }
+
   .content__information {
     padding: 0px 30px;
     display: block;
     text-align: center;
   }
-
   .content__information div {
     width: 500px;
     margin: 0 auto;
@@ -791,6 +780,16 @@ footer img {
     height: 300px;
     object-fit: cover;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 880px) {
+  .right_card_block div,
+  .left_card_block div {
+    width: 100%;
+  }
+  .right_card_block img,
+  .left_card_block img {
+    width: 100%;
   }
 }
 
@@ -920,7 +919,7 @@ footer img {
   }
 
   .inforamtion_block {
-    margin: 50px 0;
+    margin: 60px 0;
   }
   .content__information {
     padding: 0px 25px;
@@ -1065,6 +1064,11 @@ footer img {
     line-height: 19px;
     margin: 10px 0;
   }
+  .main_block_four {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
 
   .main_block_four img {
     height: 250px;
@@ -1084,6 +1088,11 @@ footer img {
   .links {
     font-size: 10px !important;
     padding: 8px 18px;
+  }
+
+  .information_block {
+    margin-bottom: 50px;
+    margin-top: 0px;
   }
 
   .content__information h3 {
