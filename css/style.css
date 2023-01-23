@@ -351,8 +351,20 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-footer h1 {
+.logo-footer{
+  color: white;
   font-size: 25px;
+  font-weight: 300;
+  width: 100px;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer img {
+  width: 45px;
+  height: 40px;
+  margin: 0;
 }
 footer img {
   width: 33px;
@@ -492,9 +504,6 @@ footer img {
 
   footer {
     padding: 25px 20px;
-  }
-  footer h1 {
-    font-size: 22px;
   }
   footer img {
     width: 27px;
@@ -1007,7 +1016,7 @@ footer img {
     font-size: 18px;
     margin-bottom: 15px;
   }
-  
+
   .content_block_one button {
     margin-top: 15px;
   }
@@ -1042,7 +1051,6 @@ footer img {
   .linkLeft {
     padding: 10px 15px;
     font-size: 10px;
-
   }
 
   .card_block_two img {
