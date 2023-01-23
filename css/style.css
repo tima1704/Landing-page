@@ -224,7 +224,7 @@ a {
 .title-company h1 {
   text-align: center;
   margin-bottom: 70px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 40px;
 }
 
@@ -803,7 +803,6 @@ footer img {
   .title-company h1 {
     text-align: center;
     margin-bottom: 30px;
-    font-weight: 400;
     font-size: 30px;
   }
 
@@ -1029,6 +1028,8 @@ footer img {
   .title-company h1 {
     font-size: 20px;
     margin-top: 30px;
+    position: relative;
+    top: 7px;
   }
   .company-card h1 {
     font-size: 20px;
