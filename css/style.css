@@ -27,7 +27,7 @@ a {
   cursor: pointer;
   border-style: none;
   border-radius: 5px;
-  width: 173px;
+  width: 200px;
   background: orange;
   letter-spacing: 0.5px;
   color: #fefefe;
@@ -43,7 +43,7 @@ a {
   color: orange;
 }
 
-/*  scroll  */
+/*  scrollbar  */
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -99,12 +99,6 @@ a {
   align-items: center;
   letter-spacing: 3px;
   margin-left: 0;
-}
-.content_block_one p {
-  font-size: 19px;
-  font-weight: 300;
-  width: 700px;
-  margin-bottom: 20px;
 }
 
 /* cards info  */
@@ -219,31 +213,45 @@ a {
   margin: 8px 0;
 }
 
-/* company */
+/* Swiper */
 
-.main_block_four {
-  margin: 100px 0;
-  padding: 0 50px;
-  overflow: hidden;
+.swiper {
   width: 100%;
+  height: 100%;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
-.main_block_four img {
-  object-fit: cover;
-  transition: 0.3s;
-  width: 800px;
-  height: 350px;
-  border-radius: 7px;
-  margin-bottom: 45px;
-}
-.main_block_four h1 {
+.title-company h1 {
+  text-align: center;
+  margin-bottom: 70px;
+  font-weight: 400;
   font-size: 40px;
-  font-weight: 500;
-  line-height: 59px;
-  margin: 20px 0;
 }
-.main_block_four p {
-  font-size: 15px;
-  line-height: 27px;
+
+.swiper-wrapper {
+  cursor: pointer;
+  padding-bottom: 70px;
+}
+
+.company-card {
+  padding: 25px;
+  text-align: center;
+}
+.company-card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 3px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.company-card h1 {
+  font-size: 29px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.company-card p {
+  font-size: 17px;
+  line-height: 25px;
   margin-bottom: 20px;
 }
 
@@ -270,50 +278,6 @@ a {
   right: 0;
   bottom: -5px;
   background-color: black;
-}
-
-.linkRight {
-  transition: 0.2s;
-  position: relative;
-  color: black;
-}
-.linkRight::before {
-  content: "";
-  transition: 1s;
-  width: 5%;
-  height: 1px;
-  position: absolute;
-  left: 1px;
-  bottom: -5px;
-  background-color: black;
-}
-.linkRight:hover::before {
-  content: "";
-  width: 100%;
-  color: white;
-  height: 1px;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  background-color: black;
-}
-
-.right_card_block {
-  display: flex;
-  margin-bottom: 80px;
-}
-.right_card_block div {
-  text-align: left;
-  margin-right: 50px;
-}
-
-.left_card_block {
-  display: flex;
-  margin-bottom: 80px;
-  text-align: right;
-}
-.left_card_block div {
-  margin-left: 50px;
 }
 
 /* info company */
@@ -352,7 +316,7 @@ a {
   object-fit: cover;
 }
 
-/* last company */
+/* last block */
 
 .contacts_block {
   background: url("../img/back2.jpg") center / cover no-repeat fixed;
@@ -423,11 +387,6 @@ footer img {
     font-size: 25px;
     margin-left: 0;
   }
-  .content_block_one p {
-    font-size: 18px;
-    width: 600px;
-    margin-bottom: 20px;
-  }
 
   .main_block_two {
     margin: 80px 0;
@@ -464,27 +423,6 @@ footer img {
     line-height: 20px;
     color: rgb(21, 47, 46);
     font-weight: 400;
-  }
-
-  .main_block_four {
-    margin: 50px 0;
-    padding: 0 25px;
-  }
-  .main_block_four div a {
-    font-size: 13px;
-  }
-  .main_block_four img {
-    width: 500px;
-    height: 470px;
-  }
-  .main_block_four h1 {
-    font-size: 35px;
-    margin: 15px 0;
-  }
-  .main_block_four p {
-    font-size: 13px;
-    line-height: 23px;
-    margin-bottom: 17px;
   }
 
   .main_block_three {
@@ -567,25 +505,6 @@ footer img {
 }
 
 @media (max-width: 1090px) {
-  .main_block_four {
-    padding: 0 25px;
-  }
-  .main_block_four div a {
-    font-size: 13px;
-  }
-  .main_block_four img {
-    width: 470px;
-    height: 470px;
-  }
-  .main_block_four h1 {
-    font-size: 35px;
-    line-height: 42px;
-  }
-  .main_block_four p {
-    font-size: 13px;
-    line-height: 23px;
-  }
-
   .main_block_three {
     padding: 70px 0;
   }
@@ -618,6 +537,11 @@ footer img {
     width: 70px;
     height: 11px;
     margin: 5px 0;
+  }
+
+  .title-company h1 {
+    margin-bottom: 70px;
+    font-size: 40px;
   }
 
   .information_block {
@@ -661,11 +585,6 @@ footer img {
     line-height: 58px;
     margin: 15px 0;
   }
-  .content_block_one p {
-    font-size: 15px;
-    width: 600px;
-    margin: 20px auto;
-  }
 
   .cards_block_two {
     display: block;
@@ -705,69 +624,6 @@ footer img {
     font-weight: 400;
   }
 
-  .main_block_four {
-    margin-bottom: 0px;
-    width: 100%;
-  }
-
-  .right_card_block {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .left_card_block {
-    flex-direction: column;
-    align-items: center;
-  }
-  .right_card_block div,
-  .left_card_block div {
-    text-align: center;
-    margin-left: 0px;
-    margin-right: 0px;
-
-    width: 700px;
-  }
-  .main_block_four img {
-    width: 800px;
-    height: 400px;
-    margin-bottom: 20px;
-  }
-  .main_block_four h1 {
-    font-size: 32px;
-    line-height: 40px;
-    margin-bottom: 20px;
-  }
-  .main_block_four p {
-    font-size: 13px;
-    line-height: 19px;
-    margin-top: 12px;
-    margin-bottom: 25px;
-  }
-
-  .linkLeft,
-  .linkRight {
-    color: white;
-    padding: 10px 25px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    font-size: 14px;
-    border-radius: 10px;
-    border-radius: 1px;
-    background-color: rgba(0, 0, 0, 0.521);
-  }
-  .linkLeft:hover::before,
-  .linkRight:hover::before {
-    width: 0;
-  }
-  .linkRight::before,
-  .linkLeft::before {
-    width: 0;
-  }
-  .linkLeft:hover,
-  .linkRight:hover {
-    background-color: orange;
-    color: #fefefe;
-  }
-
   .information_block {
     margin-bottom: 50px;
     margin-top: 20px;
@@ -797,21 +653,47 @@ footer img {
     object-fit: cover;
     margin-bottom: 20px;
   }
-}
-@media (max-width: 880px) {
-  .right_card_block div,
-  .left_card_block div {
-    width: 100%;
+
+  .company-card img {
+    height: 250px;
+    margin-bottom: 10px;
   }
-  .right_card_block img,
-  .left_card_block img {
-    width: 100%;
+  .company-card h1 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .company-card p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  .linkLeft {
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    border-radius: 10px;
+    border-radius: 1px;
+    background-color: rgba(0, 0, 0, 0.521);
+  }
+  .linkLeft:hover::before {
+    width: 0;
+  }
+  .linkLeft::before {
+    width: 0;
+  }
+
+  .linkLeft:hover {
+    background-color: orange;
+    color: #fefefe;
   }
 }
 
 @media (max-width: 700px) {
   .btn {
-    width: 140px;
     font-size: 14px;
     padding: 9px 20px;
   }
@@ -829,12 +711,6 @@ footer img {
     line-height: 58px;
     margin-bottom: 15px;
     margin-top: 5px;
-  }
-  .content_block_one p {
-    font-size: 15px;
-    line-height: 18px;
-    width: 500px;
-    margin: 10px auto;
   }
   .content_block_one button {
     margin-top: 15px;
@@ -920,20 +796,15 @@ footer img {
     bottom: 3px;
   }
 
-  .main_block_four img {
-    height: 300px;
-    margin-bottom: 10px;
+  .swiper {
+    margin-top: 50px;
+    margin-bottom: 0px;
   }
-  .main_block_four h1 {
-    font-size: 29px;
-    line-height: 40px;
-    margin-bottom: 15px;
-  }
-  .main_block_four p {
-    font-size: 13px;
-    line-height: 19px;
-    margin-top: 12px;
-    margin-bottom: 25px;
+  .title-company h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 30px;
   }
 
   .inforamtion_block {
@@ -973,19 +844,12 @@ footer img {
 
 @media (max-width: 573px) {
   .btn {
-    width: 130px;
     font-size: 13px;
     padding: 9px 20px;
   }
 
   .content_block_one {
     padding: 0 25px;
-  }
-  .content_block_one p {
-    font-size: 15px;
-    line-height: 18px;
-    width: 100%;
-    margin: 10px auto;
   }
 
   .content__information div {
@@ -1008,6 +872,26 @@ footer img {
   }
   .content_block_three p {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .swiper-wrapper {
+    margin-top: 50px !important;
+  }
+
+  .company-card {
+    padding: 0px 25px;
+  }
+  .swiper {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .title-company h1 {
+    font-size: 25px;
+    margin-top: 30px;
+    padding: 0 25px;
   }
 }
 
@@ -1055,12 +939,6 @@ footer img {
     margin-bottom: 15px;
     margin-top: 0px;
   }
-  .content_block_one p {
-    font-size: 14px;
-    line-height: 21px;
-    width: 100%;
-    margin: 10px 0;
-  }
   .content_block_one button {
     margin-top: 20px;
   }
@@ -1081,31 +959,6 @@ footer img {
     font-size: 13px;
     line-height: 19px;
     margin: 10px 0;
-  }
-  .main_block_four {
-    margin-top: 40px;
-    margin-bottom: 0px;
-    width: 100%;
-  }
-
-  .main_block_four img {
-    height: 250px;
-    margin-bottom: 8px;
-  }
-  .main_block_four h1 {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 15px;
-  }
-  .main_block_four p {
-    font-size: 11px;
-    line-height: 19px;
-    margin-top: 12px;
-    margin-bottom: 25px;
-  }
-  .links {
-    font-size: 10px !important;
-    padding: 8px 18px;
   }
 
   .information_block {
@@ -1138,13 +991,13 @@ footer img {
   }
 
   .btn {
-    width: 100px;
+    width: 150px;
     font-size: 12px;
     padding: 9px 10px;
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 396px) {
   .content_block_one h1 {
     font-size: 30px;
     line-height: 40px;
@@ -1155,11 +1008,7 @@ footer img {
     font-size: 18px;
     margin-bottom: 15px;
   }
-  .content_block_one p {
-    font-size: 13px;
-    line-height: 20px;
-    width: 100%;
-  }
+  
   .content_block_one button {
     margin-top: 15px;
   }
@@ -1175,6 +1024,24 @@ footer img {
     font-size: 11px;
     line-height: 19px;
     margin: 10px 0;
+  }
+
+  .title-company h1 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .company-card h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .company-card p {
+    font-size: 11px;
+    margin-bottom: 15px;
+  }
+  .linkLeft {
+    padding: 10px 15px;
+    font-size: 10px;
+
   }
 
   .card_block_two img {
