@@ -217,6 +217,8 @@
           </div>
         </div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </section>
 
@@ -271,15 +273,20 @@
       breakpoints: {
         1100: {
           slidesPerView: 3,
-          spaceBetween: 0
+          spaceBetween: 20
         },
         600: {
           slidesPerView: 2,
         },
         320: {
           slidesPerView: 1,
+          spaceBetween: 2
         },
-      }
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
   </script>
 
