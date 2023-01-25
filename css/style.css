@@ -339,7 +339,7 @@ a {
 }
 
 .content_contacts_block {
-  width: 500px;
+  width: 800px;
   margin: 0 auto;
 }
 .content_contacts_block h1 {
@@ -391,9 +391,7 @@ footer img {
 
 @media (max-width: 1250px) {
   .btn {
-    width: 155px;
     font-size: 15px;
-    padding: 9px 25px;
   }
 
   .main_block_one {
@@ -500,8 +498,8 @@ footer img {
   }
 
   .content_contacts_block {
-    width: 470px;
     margin: 0 auto;
+    width: 600px;
   }
   .content_contacts_block h1 {
     font-size: 49px;
@@ -644,6 +642,10 @@ footer img {
     color: rgb(21, 47, 46);
     font-weight: 400;
   }
+  .swiper {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
 
   .information_block {
     margin-bottom: 50px;
@@ -656,7 +658,8 @@ footer img {
     text-align: center;
   }
   .content__information div {
-    width: 500px;
+    width: 100%;
+    padding: 0 30px;
     margin: 0 auto;
   }
   .content__information h3 {
@@ -717,6 +720,10 @@ footer img {
   .btn {
     font-size: 14px;
     padding: 9px 20px;
+  }
+  .swiper {
+    margin-top: 50px;
+    margin-bottom: 0;
   }
   .main_block_one {
     height: 100vh;
@@ -819,7 +826,7 @@ footer img {
 
   .swiper {
     margin-top: 50px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .title-company h1 {
     text-align: center;
@@ -1011,9 +1018,9 @@ footer img {
   }
 
   .btn {
-    width: 150px;
-    font-size: 12px;
-    padding: 9px 10px;
+    width: 120px;
+    font-size: 10px;
+    padding: 6px 10px;
   }
 }
 
